@@ -17,7 +17,7 @@
     <properties>
         <java.version>1.8</java.version>
         <kotlin.version>1.3.21</kotlin.version>
-        <start-class>com.instana.demo.kotlin.corountines.Application</start-class>
+        <start.class>com.instana.demo.kotlin.corountines.ApplicationKt</start.class>
     </properties>
 
     <dependencies>
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
             <artifactId>kotlin-reflect</artifactId>
-            <version>1.3.21</version>
+            <version>${kotlin.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlinx</groupId>
@@ -62,7 +62,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.instana.demo.kotlin.corountines.Application</mainClass>
+                    <mainClass>${start.class}</mainClass>
                 </configuration>
             </plugin>
             <plugin>
